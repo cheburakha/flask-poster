@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Coloring the bar -->
+        <!-- Chrome, Firefox OS and Opera -->
+        <meta name="theme-color" content="#000000" />
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#000000">
+        <!-- iOS (attribute only supports black, black-translucent or default` - you cannot use a custom color) -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <title>POST-полигон</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="static/css/styles.css">
+    </head>
+    <body>
+        <form id="postForm">
+            <h3>Отправка данных</h3>
+            <div class="mb10">
+                <span>URL: </span>
+                <input type="text" placeholder="URL" id="sendURL" value="/post/" />
+            </div>
+            
+            <div class="mb10">
+                <span>Отправка файла</span>
+                <label class="switch">
+                    <input id="sendTypeToggler" type="checkbox">
+                    <div class="slider round"></div>
+                </label>
+            </div>
+            <div class="mb10">
+                <input type="file" name="sendfile" id="sendfile" />
+            </div>
+            <br />
+
+
+            <div class="textdata">
+                <span style="display: block;">Текстовые данные: </span>
+                <input type="text" name="TextField1" class="shortened" placeholder="Текстовое поле 1" />
+                <input type="text" name="TextField2" class="shortened" placeholder="Текстовое поле 2" />
+            </div>
+            <br />
+
+            <button type="submit">Отправить</button>
+            
+        </form>
+
+        <!-- Scripts section -->
+        <script type='text/javascript' src='static/js/lib/jquery.min.js'></script>
+        <script type='text/javascript' src='static/js/main.js'></script>
+
+    </body>
+</html>
